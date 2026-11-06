@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Сомино: Дорога жизни - концепция стиля</title>
+<meta name="description" content="Концепция визуального языка музея «Сомино: Дорога жизни» в системе ГБУК ЛО «ММК «Дорога жизни»: логотип, палитра, шрифты, паттерны, талисманы, навигация, полиграфия, сувениры, ТЗ и план на 13 дней.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* общие с ММК «Дорога жизни» */
+  --dz:#AB2510; --dz-deep:#521106; --dz-warm:#F2F0EF;
+  /* собственные цвета Сомино */
+  --voda:#1F4A57;  --hvoya:#34503A; --beresta:#EFE6D3; --izrazec:#2D5B86; --smola:#3B2A20;
+  --ink:#16191C; --mute:#5A6168; --line:rgba(22,25,28,.14); --paper:#FBF8F2;
+  --serif:"Forum",Georgia,serif; --sans:"Inter",system-ui,sans-serif; --stamp:"Oswald","Arial Narrow",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans)}
+img,svg{display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-weight:400}
+h2{font:400 clamp(30px,4vw,48px)/1.05 var(--serif);letter-spacing:.01em;margin:6px 0 14px}
+h3{font:600 17px/1.3 var(--sans);margin-bottom:6px}
+.k{font:600 13px/1 var(--stamp);letter-spacing:.22em;text-transform:uppercase;color:var(--dz)}
+.lead{color:var(--mute);max-width:760px;font-size:17px}
+section{padding:84px 0;border-top:1px solid var(--line)}
+.num{font:600 13px/1 var(--stamp);color:var(--dz);letter-spacing:.2em;margin-right:12px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px}
+.pad{padding:22px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.mt{margin-top:28px}
+.g7{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+.g8{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}
+.small{font-size:14px;color:var(--mute)}
+ul.dash{list-style:none;display:grid;gap:7px}
+ul.dash li{padding-left:18px;position:relative}
+ul.dash li:before{content:"";position:absolute;left:0;top:11px;width:9px;height:2px;background:var(--dz)}
+
+/* ticker - эхо бегущей строки сайта ММК */
+.ticker{background:#fff4f1;color:var(--dz-deep);overflow:hidden;white-space:nowrap;font:500 13px/34px var(--stamp);letter-spacing:.32em;text-transform:uppercase}
+.ticker div{display:inline-block;animation:tk 60s linear infinite;padding-left:100%}
+@keyframes tk{to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.ticker div{animation:none;padding-left:20px}}
+/* parent bar */
+.bar{background:var(--dz);color:#fff}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;min-height:56px;gap:16px;font:600 13px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase}
+.bar a{color:#fff;text-decoration:none;opacity:.9}
+/* hero */
+.hero{background:var(--voda);color:var(--beresta);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:96px;position:relative;z-index:2}
+.hero h1{font:400 clamp(44px,6.4vw,84px)/.98 var(--serif);margin:16px 0 22px}
+.hero p{color:#d6e0e1;max-width:540px;font-size:17px}
+.hero .k{color:#f0a593}
+.hero .road{position:absolute;inset:auto 0 0 0;height:120px;z-index:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chip{border:1px solid rgba(239,230,211,.35);border-radius:99px;padding:6px 13px;font-size:13px;color:#e8eef0}
+.lockup-hero{background:var(--beresta);border-radius:12px;padding:40px 36px;color:var(--voda)}
+/* logo grid */
+.lg{aspect-ratio:4/3;display:grid;place-items:center;border-radius:10px;border:1px solid var(--line);position:relative;padding:18px}
+.lg .cap{position:absolute;left:12px;bottom:10px;font-size:13px;color:var(--mute)}
+.guard{outline:1.5px dashed rgba(171,37,16,.65);outline-offset:12px}
+/* swatches */
+.sw{border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.sw .c{height:104px;position:relative}
+.sw .c span{position:absolute;left:10px;top:10px;font:600 11px/1 var(--stamp);letter-spacing:.14em;text-transform:uppercase;background:rgba(255,255,255,.88);color:var(--dz-deep);padding:5px 7px;border-radius:4px}
+.sw .t{padding:10px 12px;font-size:12.5px;line-height:1.55;color:#3b4248}
+.sw .t b{display:block;font-size:14px;color:var(--ink);margin-bottom:2px}
+.prop{display:flex;height:28px;border-radius:6px;overflow:hidden;margin-top:20px}
+/* fonts */
+.fnt .s{font-size:44px;line-height:1.1;margin:10px 0}
+/* patterns */
+.pt{height:190px;border-radius:10px;border:1px solid var(--line);overflow:hidden}
+/* mascots */
+.ms{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.ms .art{background:var(--beresta);aspect-ratio:1/1;display:grid;place-items:center}
+.ms .art svg{width:86%;height:86%}
+.ms .tx{padding:14px 16px 18px}
+.ms .tx b{font:400 22px/1.1 var(--serif);display:block;margin-bottom:6px}
+.ms .q{font:italic 400 14px/1.45 var(--sans);color:var(--hvoya);margin-top:8px}
+.vars{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.vars span{font-size:12.5px;border:1px solid var(--line);border-radius:99px;padding:3px 9px;color:var(--mute)}
+/* icons */
+.ic{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:12.5px;color:var(--mute);text-align:center}
+.ic .b{width:76px;height:76px;border-radius:16px;background:var(--voda);display:grid;place-items:center}
+.ic svg{width:44px;height:44px}
+/* table */
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{text-align:left;vertical-align:top;padding:11px 12px;border-bottom:1px solid var(--line)}
+th{font:600 12px/1.2 var(--stamp);letter-spacing:.14em;text-transform:uppercase;color:var(--dz-deep);background:#fff4f1}
+td:first-child{font-weight:600;white-space:nowrap}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
+.flag{display:inline-block;font:600 11px/1 var(--stamp);letter-spacing:.12em;text-transform:uppercase;padding:5px 8px;border-radius:4px;background:#fff4f1;color:var(--dz)}
+.plan{display:grid;grid-template-columns:repeat(13,1fr);gap:4px;margin-top:22px}
+.plan div{height:34px;border-radius:4px;font:600 11px/34px var(--stamp);text-align:center;color:#fff}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;font-size:13px;color:var(--mute)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+footer{background:var(--dz-deep);color:#f3d9d2;padding:36px 0;font-size:14px}
+@media (max-width:980px){
+  .hero .wrap,.grid2{grid-template-columns:1fr}
+  .grid4,.grid5{grid-template-columns:repeat(2,1fr)}
+  .grid3{grid-template-columns:1fr 1fr}
+  .plan{grid-template-columns:repeat(7,1fr)}
+  .g7{grid-template-columns:repeat(4,1fr)}
+  .g8{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:560px){
+  .grid3,.grid4{grid-template-columns:1fr}
+  .grid5{grid-template-columns:1fr 1fr}
+  .bar .wrap span:last-child{display:none}
+  td:first-child{white-space:normal}
+  .g7{grid-template-columns:1fr 1fr}
+  .lockup-hero{padding:24px 18px}
+  .lockup-hero svg{width:84px;height:84px}
+  .lockup-hero div[style*="58px"]{font-size:40px!important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+  <!-- ЗНАК «ПУТЬ»: створки шлюза над водой + три волны, нижняя волна выпрямляется в дорогу -->
+  <symbol id="mk" viewBox="0 0 120 120">
+    <path d="M16 54 V24 a44 44 0 0 1 88 0 V54" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <path d="M60 4 V54" stroke="currentColor" stroke-width="5"/>
+    <path d="M30 22 L60 40 L90 22" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M10 70 q12.5 -9 25 0 t25 0 t25 0 t25 0" fill="none" stroke="currentColor" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M10 86 q12.5 -9 25 0 t25 0 t25 0 t25 0" fill="none" stroke="currentColor" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M10 104 q12.5 -9 25 0 L110 104" fill="none" stroke="var(--road,currentColor)" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M58 104 h9 M76 104 h9 M94 104 h9" stroke="var(--paper,#fff)" stroke-width="2.4"/>
+  </symbol>
+
+  <!-- паттерны -->
+  <pattern id="pSom" width="64" height="40" patternUnits="userSpaceOnUse"><!-- лодки-соминки -->
+    <path d="M6 22 q26 14 52 0 l-6 -8 h-40 z" fill="#1F4A57"/><path d="M14 14 h36" stroke="#EFE6D3" stroke-width="1.6"/>
+    <path d="M38 34 q26 14 52 0" fill="none" stroke="#1F4A57" stroke-width="1.4" opacity=".4" transform="translate(-32 0)"/>
+  </pattern>
+  <pattern id="pShluz" width="48" height="48" patternUnits="userSpaceOnUse"><!-- створки шлюза -->
+    <path d="M4 44 V18 a20 20 0 0 1 40 0 V44" fill="none" stroke="#34503A" stroke-width="3"/><path d="M24 0 V44" stroke="#34503A" stroke-width="2"/><path d="M10 16 L24 26 L38 16" fill="none" stroke="#AB2510" stroke-width="2"/>
+  </pattern>
+  <pattern id="pPodzor" width="44" height="34" patternUnits="userSpaceOnUse"><!-- резной подзор усадьбы -->
+    <path d="M0 6 H44" stroke="#3B2A20" stroke-width="2.4"/><path d="M0 6 a11 11 0 0 0 22 0 a11 11 0 0 0 22 0" fill="none" stroke="#3B2A20" stroke-width="2.4"/>
+    <path d="M11 17 v7 M33 17 v7" stroke="#3B2A20" stroke-width="2"/><circle cx="11" cy="28" r="3" fill="#AB2510"/><circle cx="33" cy="28" r="3" fill="#3B2A20"/>
+  </pattern>
+  <pattern id="pIzr" width="56" height="56" patternUnits="userSpaceOnUse"><!-- изразец печи -->
+    <rect x="1.5" y="1.5" width="53" height="53" rx="3" fill="#F7F2E6" stroke="#2D5B86" stroke-width="2"/>
+    <path d="M28 10 L46 28 L28 46 L10 28 Z" fill="none" stroke="#2D5B86" stroke-width="2"/><circle cx="28" cy="28" r="6" fill="#2D5B86"/>
+    <path d="M1.5 1.5 l8 8 M54.5 1.5 l-8 8 M1.5 54.5 l8 -8 M54.5 54.5 l-8 -8" stroke="#2D5B86" stroke-width="2"/>
+  </pattern>
+  <pattern id="pRoad" width="40" height="120" patternUnits="userSpaceOnUse"><path d="M0 60 H22" stroke="#EFE6D3" stroke-width="3"/></pattern>
+</defs>
+</svg>
+
+<div class="ticker" aria-hidden="true"><div>СОМИНО • ПРИСТАНЬ • ШЛЮЗ • СОМИНКА • 1811 • 1941 • ЗАБОРЬЕ • ДОРОГА ЖИЗНИ • ПАМЯТЬ • СОМИНО • ПРИСТАНЬ • ШЛЮЗ • СОМИНКА • 1811 • 1941 • ЗАБОРЬЕ • ДОРОГА ЖИЗНИ • ПАМЯТЬ</div></div>
+<div class="bar"><div class="wrap"><span>ГБУК ЛО «ММК «Дорога жизни» · музей «Сомино: Дорога жизни»</span><span>Концепция стиля · демо к отклику</span></div></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="k">Концепция «Путь» · вариант 2</div>
+      <h1>Вода, ставшая<br>дорогой</h1>
+      <p>Сомино два века было пристанью Тихвинской водной системы: шлюзы, лодки-«соминки», пароходы. В ноябре 1941 года по соседству, от Заборья, пошла автодорога к Ладоге - один из участков Дороги жизни. Знак музея рассказывает именно это: створки шлюза, три волны Соминки, и нижняя волна выпрямляется в дорогу.</p>
+      <div class="chips"><span class="chip">в системе ММК «Дорога жизни»</span><span class="chip">современно, не «лубочно»</span><span class="chip">цифра · печать · сувениры</span></div>
+    </div>
+    <div class="lockup-hero" style="--road:var(--dz);--paper:var(--beresta)">
+      <div style="display:flex;align-items:center;gap:24px">
+        <svg width="132" height="132" aria-label="знак"><use href="#mk"/></svg>
+        <div>
+          <div style="font:400 58px/0.9 var(--serif);letter-spacing:.04em">СОМИНО</div>
+          <div style="height:3px;background:var(--dz);margin:12px 0 10px;width:100%"></div>
+          <div style="font:600 15px/1 var(--stamp);letter-spacing:.3em;color:var(--dz)">ДОРОГА ЖИЗНИ</div>
+          <div style="font:500 11px/1.4 var(--sans);color:var(--mute);margin-top:8px;letter-spacing:.02em">музей · филиал ГБУК ЛО «ММК «Дорога жизни»</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg class="road" width="100%" height="120" preserveAspectRatio="none" aria-hidden="true">
+    <rect width="100%" height="120" fill="#183B45"/><rect y="0" width="100%" height="6" fill="#AB2510"/><rect width="100%" height="120" fill="url(#pRoad)"/>
+  </svg>
+</header>
+
+<!-- 00 РАЗБОР ТЗ -->
+<section id="tz">
+  <div class="wrap">
+    <div class="k"><span class="num">00</span>Разбор ТЗ до винтика</div>
+    <h2>Что сдаём, в каком виде и где подводные камни</h2>
+    <p class="lead">Свела объявление и файл ТЗ в одну таблицу. Справа - на что смотрит Научно-методический совет при приёмке.</p>
+    <div class="tbl mt"><table>
+      <tr><th>Блок</th><th>Состав по ТЗ</th><th>Что сдаём</th><th>Критерий приёмки</th></tr>
+      <tr><td>Логотип</td><td>Основной + монохромный, инверсный, компактный; правила построения, мин. размеры, охранное поле</td><td>4 версии × (цвет / ч-б) в AI, SVG, PDF, PNG; схема на модульной сетке; таблица минимальных размеров</td><td>Узнаётся на фасадной вывеске и на иконке AR-приложения 48 px</td></tr>
+      <tr><td>Цвет</td><td>Основная и дополнительная палитры, RGB/CMYK/Pantone/HEX, пропорции</td><td>7 цветов: 3 общих с ММК + 4 «соминских»; коды; правила сочетаний; запрещённые пары</td><td>Сочетается со стилем ММК, а не спорит с ним</td></tr>
+      <tr><td>Шрифты</td><td>Заголовочный, текстовый, акцентный; обоснование; начертания, трекинг, интерлиньяж</td><td>Шкала кеглей для печати и экрана, таблица интервалов, лицензии</td><td>Кириллица полная, есть свободные или уже купленные учреждением</td></tr>
+      <tr><td>Графика</td><td>Паттерны, узоры, рамки из архитектуры усадьбы, коллекции, Соминки и Тихвинской системы</td><td>4 паттерна + 3 рамки + правила масштаба; векторные «бесшовные» плитки</td><td>Цельная система, а не набор картинок</td></tr>
+      <tr><td>Талисманы</td><td>Доктор Ч., пароход «Кемка», старый сом, мудрая сова, строгий домовой; ≥ 3 эскиза каждого; для экскурсий и AR</td><td>15 эскизов + выбранные варианты в 3 ракурсах и 3 эмоциях; вектор, слои для анимации</td><td>Обаятельные, уместны в музее памяти</td></tr>
+      <tr><td>Навигация</td><td>Иконки аудиогида, QR, указатели, таблички возраста и доступности (МГН), разделы, фасадные вывески, стенды</td><td>Набор пиктограмм на сетке 24 px, 6 типовых носителей с размерами, схема размещения</td><td>Читаемость с 3-5 м, контраст по ГОСТ Р 52131 для МГН</td></tr>
+      <tr><td>Полиграфия</td><td>Афиши, буклеты, каталоги, открытки, блокноты, календари, приглашения, билеты, листовки</td><td>Шаблоны с выпусками 3 мм, CMYK, сетки; редактируемые макеты</td><td>Сотрудники сами меняют текст в шаблоне</td></tr>
+      <tr><td>Сувениры</td><td>Кружки, футболки, сумки, пакеты, значки, аксессуары, печатные пряники, ручки, карандаши</td><td>Линейка эскизов на мокапах + технические файлы под тип нанесения (сублимация, шелкография, пищевая печать)</td><td>«Хочется купить» + реально изготовить</td></tr>
+      <tr><td>Сдача</td><td>Редактируемый формат + PDF; бумага в 2 экз., полноцвет</td><td>Брендбук PDF + исходники AI/Figma; печать и курьер в Сомино</td><td>До 20.11.2026; 2 цикла правок по 2 дня</td></tr>
+    </table></div>
+    <div class="grid3 mt">
+      <div class="card pad"><span class="flag">Нестыковка</span><h3 style="margin-top:10px">Срок: 25.11 или 20.11?</h3><p class="small">В объявлении «строго до 25 ноября», в файле ТЗ - «строго до 20.11.2026». Планирую на 20.11 - запас в 5 дней остаётся вам.</p></div>
+      <div class="card pad"><span class="flag">Нужно от музея</span><h3 style="margin-top:10px">Брендбук ММК и коллекция</h3><p class="small">Ссылка на материалы ГБУК ЛО «ММК «Дорога жизни» обещана в ТЗ. Ещё нужны фото усадьбы (резьба, колонны, башня, печи) и список предметов будущей экспозиции.</p></div>
+      <div class="card pad"><span class="flag">Уточнить</span><h3 style="margin-top:10px">Кто такой Доктор Ч.</h3><p class="small">В усадьбе до лесничества была больница - образ земского врача уместен. Если у «Ч.» есть реальный прототип, сверю внешность с фото.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 ДВЕ КОНЦЕПЦИИ -->
+<section>
+  <div class="wrap">
+    <div class="k"><span class="num">01</span>Две идеи стиля</div>
+    <h2>Современно, без «лубка»</h2>
+    <p class="lead">Правило для обеих идей: никаких хохломы, «петушков» и шрифтов под старину. Народная тема - через конструкцию: шлюз, лодка, резной подзор, изразец, нарисованные чистой геометрией.</p>
+    <div class="grid2 mt">
+      <div class="card" style="overflow:hidden">
+        <div style="background:var(--voda);color:var(--beresta);padding:26px;display:flex;gap:18px;align-items:center;--road:#F0A593;--paper:var(--voda)"><svg width="74" height="74"><use href="#mk"/></svg><div style="font:400 34px/1 var(--serif)">Путь</div><span class="flag" style="margin-left:auto">в демо</span></div>
+        <div class="pad"><h3>A. «Путь: от воды к дороге»</h3><ul class="dash small"><li>Главный образ - шлюз и волна, которая становится дорогой. Связывает пристань Сомино и Дорогу жизни.</li><li>Сине-зелёная «вода» и «хвоя» плюс красный ММК как нить памяти.</li><li>Графика линейная, инженерная: чертёж шлюза, разметка дороги.</li><li>Сильные стороны: сразу считывается связь с комплексом, хорошо выглядит на навигации и в AR.</li></ul></div>
+      </div>
+      <div class="card" style="overflow:hidden">
+        <div style="background:var(--beresta);padding:26px;display:flex;gap:18px;align-items:center"><svg width="74" height="74" viewBox="0 0 120 120"><rect width="120" height="120" fill="url(#pPodzor)"/></svg><div style="font:400 34px/1 var(--serif);color:var(--smola)">Усадьба</div></div>
+        <div class="pad"><h3>B. «Тёплый дом»</h3><ul class="dash small"><li>Главный образ - фасад усадьбы: колонны, мезонин, смотровая башня, резной подзор, изразцовая печь.</li><li>Палитра дерева и бересты, изразцовый синий, красный ММК - точечно.</li><li>Графика орнаментальная, но собранная из простых модулей (полукруг, ромб, капля).</li><li>Сильные стороны: уют и семейная аудитория, идеальна для сувениров и детских программ.</li></ul></div>
+      </div>
+    </div>
+    <p class="small mt">Предлагаю A как основу (логотип, навигация, полиграфия) и B как «второй голос» для сувениров и детской линии - паттерны B уже есть в системе ниже.</p>
+  </div>
+</section>
+
+<!-- 02 ЛОГОТИП -->
+<section>
+  <div class="wrap">
+    <div class="k"><span class="num">02</span>Логотип и версии</div>
+    <h2>Знак «Путь» в системе ММК</h2>
+    <p class="lead">Связка как у филиала: крупное «СОМИНО» + строка «ДОРОГА ЖИЗНИ» узким акцентным шрифтом и красная линия - тот же приём, что у «Кобона: Дорога жизни» на сайте комплекса. Охранное поле = высота одной волны знака (X). Минимальный размер: знак 10 мм / 24 px, полная версия 35 мм / 140 px.</p>
+    <div class="grid4 mt">
+      <div class="lg" style="background:#fff"><div class="guard" style="display:flex;align-items:center;gap:10px;color:var(--voda);--road:var(--dz);--paper:#fff"><svg width="58" height="58"><use href="#mk"/></svg><div><div style="font:400 25px/1 var(--serif)">СОМИНО</div><div style="height:2px;background:var(--dz);margin:5px 0"></div><div style="font:600 9px/1 var(--stamp);letter-spacing:.28em;color:var(--dz)">ДОРОГА ЖИЗНИ</div></div></div><span class="cap">Основная</span></div>
+      <div class="lg" style="background:#fff"><div class="guard" style="display:flex;align-items:center;gap:10px;color:#111;--road:#111;--paper:#fff"><svg width="58" height="58"><use href="#mk"/></svg><div><div style="font:400 25px/1 var(--serif)">СОМИНО</div><div style="height:2px;background:#111;margin:5px 0"></div><div style="font:600 9px/1 var(--stamp);letter-spacing:.28em">ДОРОГА ЖИЗНИ</div></div></div><span class="cap">Монохромная</span></div>
+      <div class="lg" style="background:var(--dz-deep)"><div class="guard" style="outline-color:rgba(255,255,255,.5);display:flex;align-items:center;gap:10px;color:#fff;--road:#F0A593;--paper:var(--dz-deep)"><svg width="58" height="58"><use href="#mk"/></svg><div><div style="font:400 25px/1 var(--serif)">СОМИНО</div><div style="height:2px;background:#F0A593;margin:5px 0"></div><div style="font:600 9px/1 var(--stamp);letter-spacing:.28em;color:#F6C9BD">ДОРОГА ЖИЗНИ</div></div></div><span class="cap" style="color:#f3d9d2">Инверсная (фон ММК)</span></div>
+      <div class="lg" style="background:#fff"><div style="display:flex;gap:14px;align-items:center"><div style="width:84px;height:84px;border-radius:22px;background:var(--voda);display:grid;place-items:center;color:var(--beresta);--road:#F0A593;--paper:var(--voda)"><svg width="58" height="58"><use href="#mk"/></svg></div><div style="width:40px;height:40px;border-radius:50%;background:var(--dz);display:grid;place-items:center;color:#fff;--road:#fff;--paper:var(--dz)"><svg width="28" height="28"><use href="#mk"/></svg></div></div><span class="cap">Компактная: AR-иконка, значок</span></div>
+    </div>
+    <div class="grid2 mt">
+      <div class="card pad">
+        <h3>Построение</h3>
+        <svg viewBox="0 0 260 150" width="100%" style="max-width:420px;margin-top:8px;color:var(--voda);--road:var(--dz);--paper:#fff" aria-label="сетка знака">
+          <defs><pattern id="g" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0H0V10" fill="none" stroke="#e3dccd" stroke-width=".6"/></pattern></defs>
+          <rect width="260" height="150" fill="url(#g)"/>
+          <svg x="20" y="15" width="120" height="120"><use href="#mk"/></svg>
+          <rect x="20" y="15" width="120" height="120" fill="none" stroke="#AB2510" stroke-dasharray="4 3"/>
+          <path d="M150 15 V135" stroke="#AB2510"/><text x="156" y="30" font-size="10" fill="#AB2510" font-family="Inter">створки: дуга R = 44 модуля</text>
+          <text x="156" y="88" font-size="10" fill="#AB2510" font-family="Inter">волны: шаг 16, толщина 6.5</text>
+          <text x="156" y="122" font-size="10" fill="#AB2510" font-family="Inter">дорога: волна → прямая</text>
+        </svg>
+      </div>
+      <div class="card pad">
+        <h3>Связка с комплексом</h3>
+        <ul class="dash small">
+          <li>Красный ММК (#AB2510) - всегда в логотипе: линия под названием и «дорога» в знаке.</li>
+          <li>Строка «ДОРОГА ЖИЗНИ» набрана узким акцентным шрифтом, как штемпельные заголовки сайта ММК (там PF Stamps Pro - при наличии лицензии используем его же).</li>
+          <li>На совместных носителях логотип ММК слева, «Сомино» справа, разделитель 1 px, высоты знаков равны.</li>
+          <li>Бегущая строка «… • ПАМЯТЬ • …» из шапки сайта ММК переходит на билеты, ленты и стенды Сомино со своими словами.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 ПАЛИТРА -->
+<section>
+  <div class="wrap">
+    <div class="k"><span class="num">03</span>Палитра</div>
+    <h2>Три цвета от комплекса, четыре - от места</h2>
+    <p class="lead">Коды Pantone - ближайшие по веерам, финально сверяю по физическому вееру перед печатью.</p>
+    <div class="g7 mt">
+      <div class="sw"><div class="c" style="background:#AB2510"><span>ММК</span></div><div class="t"><b>Красный ММК</b>#AB2510<br>RGB 171 37 16<br>CMYK 15 95 100 10<br>Pantone 484 C</div></div>
+      <div class="sw"><div class="c" style="background:#521106"><span>ММК</span></div><div class="t"><b>Бордо ММК</b>#521106<br>RGB 82 17 6<br>CMYK 35 90 95 60<br>Pantone 4975 C</div></div>
+      <div class="sw"><div class="c" style="background:#F2F0EF;border-bottom:1px solid var(--line)"><span>ММК</span></div><div class="t"><b>Светлый ММК</b>#F2F0EF<br>RGB 242 240 239<br>CMYK 4 4 4 0<br>Pantone 663 C</div></div>
+      <div class="sw"><div class="c" style="background:#1F4A57"></div><div class="t"><b>Вода Соминки</b>#1F4A57<br>RGB 31 74 87<br>CMYK 85 50 40 35<br>Pantone 7699 C</div></div>
+      <div class="sw"><div class="c" style="background:#34503A"></div><div class="t"><b>Хвоя</b>#34503A<br>RGB 52 80 58<br>CMYK 70 40 75 35<br>Pantone 5605 C</div></div>
+      <div class="sw"><div class="c" style="background:#EFE6D3"></div><div class="t"><b>Береста</b>#EFE6D3<br>RGB 239 230 211<br>CMYK 5 8 18 0<br>Pantone 7527 C</div></div>
+      <div class="sw"><div class="c" style="background:#2D5B86"></div><div class="t"><b>Изразец</b>#2D5B86<br>RGB 45 91 134<br>CMYK 85 55 20 10<br>Pantone 7699 C → 2154 C</div></div>
+    </div>
+    <div class="prop"><div style="flex:40;background:#EFE6D3"></div><div style="flex:22;background:#1F4A57"></div><div style="flex:12;background:#34503A"></div><div style="flex:10;background:#F2F0EF"></div><div style="flex:8;background:#AB2510"></div><div style="flex:5;background:#2D5B86"></div><div style="flex:3;background:#521106"></div></div>
+    <p class="small" style="margin-top:8px">Пропорции: береста 40 · вода 22 · хвоя 12 · светлый ММК 10 · красный ММК 8 · изразец 5 · бордо 3. Красный - только акцент и «нить памяти», не фон крупных площадей (кроме носителей, общих с ММК). Не сочетаем изразец с хвоей в одной плашке - теряется контраст.</p>
+  </div>
+</section>
+
+<!-- 04 ШРИФТЫ -->
+<section>
+  <div class="wrap">
+    <div class="k"><span class="num">04</span>Шрифты</div>
+    <h2>Три голоса</h2>
+    <div class="grid3 mt fnt">
+      <div class="card pad"><div class="k">Заголовочный</div><div class="s" style="font-family:var(--serif)">Пристань Сомино</div><p class="small">Forum (OFL, бесплатно). Антиква с капителями по мотивам русских надписей XVIII-XIX веков - перекликается с колоннами усадьбы, но без «старинности». Заголовки 1.0-1.1 интерлиньяж, капс +40 трекинг.</p></div>
+      <div class="card pad"><div class="k">Текстовый</div><div class="s" style="font-family:var(--sans);font-size:30px;font-weight:600">Экспозиция открыта с 10:00</div><p class="small">Inter (OFL) - тот же, что на сайте ММК, поэтому тексты двух сайтов выглядят одной семьёй. 400/600, интерлиньяж 1.5, на табличках от 600.</p></div>
+      <div class="card pad"><div class="k">Акцентный</div><div class="s" style="font-family:var(--stamp);font-size:34px;letter-spacing:.18em;text-transform:uppercase;color:var(--dz)">1941 · Заборье</div><p class="small">Узкий гротеск в разрядку для дат, «штампов», бегущих строк. В паре с ММК - PF Stamps Pro (используется на их сайте); в демо - Oswald как свободная замена.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 ПАТТЕРНЫ -->
+<section>
+  <div class="wrap">
+    <div class="k"><span class="num">05</span>Паттерны и рамки</div>
+    <h2>Из того, что реально есть в Сомино</h2>
+    <div class="grid4 mt">
+      <div><svg class="pt" width="100%"><rect width="100%" height="100%" fill="#EFE6D3"/><rect width="100%" height="100%" fill="url(#pSom)"/></svg><h3 style="margin-top:10px">Соминки</h3><p class="small">Лодки, которые здесь строили до 200 в год. Фоны, пакеты, ленты билета.</p></div>
+      <div><svg class="pt" width="100%"><rect width="100%" height="100%" fill="#F2F0EF"/><rect width="100%" height="100%" fill="url(#pShluz)"/></svg><h3 style="margin-top:10px">Шлюз</h3><p class="small">Створки Вологодского шлюза. Навигация, стенды, обороты буклетов.</p></div>
+      <div><svg class="pt" width="100%"><rect width="100%" height="100%" fill="#EFE6D3"/><rect width="100%" height="100%" fill="url(#pPodzor)"/></svg><h3 style="margin-top:10px">Подзор усадьбы</h3><p class="small">Резной карниз дома. Рамки афиш, кромки, пряники.</p></div>
+      <div><svg class="pt" width="100%"><rect width="100%" height="100%" fill="url(#pIzr)"/></svg><h3 style="margin-top:10px">Изразец</h3><p class="small">Печи усадьбы. Детская линия, кружки, значки.</p></div>
+    </div>
+    <div class="grid3 mt">
+      <div class="card" style="padding:14px"><svg viewBox="0 0 300 180" width="100%"><rect x="6" y="6" width="288" height="168" fill="#fff" stroke="#3B2A20" stroke-width="2"/><rect x="6" y="6" width="288" height="20" fill="url(#pPodzor)"/><rect x="6" y="154" width="288" height="20" fill="url(#pPodzor)" transform="rotate(180 150 164)"/><text x="150" y="102" text-anchor="middle" font-family="Forum" font-size="24" fill="#3B2A20">Рамка «Подзор»</text></svg></div>
+      <div class="card" style="padding:14px"><svg viewBox="0 0 300 180" width="100%"><rect x="6" y="6" width="288" height="168" fill="#F2F0EF"/><path d="M6 174 V40 a144 34 0 0 1 288 0 V174" fill="none" stroke="#34503A" stroke-width="3"/><path d="M150 6 V40" stroke="#34503A" stroke-width="2"/><text x="150" y="112" text-anchor="middle" font-family="Forum" font-size="24" fill="#34503A">Рамка «Шлюз»</text></svg></div>
+      <div class="card" style="padding:14px"><svg viewBox="0 0 300 180" width="100%"><rect x="6" y="6" width="288" height="168" fill="#1F4A57"/><rect x="6" y="146" width="288" height="28" fill="#183B45"/><rect x="6" y="146" width="288" height="3" fill="#AB2510"/><path d="M20 160 H44 M60 160 H84 M100 160 H124 M140 160 H164 M180 160 H204 M220 160 H244 M260 160 H284" stroke="#EFE6D3" stroke-width="2.5"/><text x="150" y="92" text-anchor="middle" font-family="Forum" font-size="24" fill="#EFE6D3">Рамка «Дорога»</text></svg></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 ТАЛИСМАНЫ -->
+<section>
+  <div class="wrap">
+    <div class="k"><span class="num">06</span>Проводники и талисманы</div>
+    <h2>Пятеро, которые поведут экскурсию</h2>
+    <p class="lead">Стилистика: плоская векторная графика из тех же модулей, что знак (дуги, капли, ромбы), 3-4 цвета палитры, крупные глаза-точки, без контуров «под мультфильм». Персонажи добрые, но взрослые по манере - уместны рядом с темой памяти. Готовы к AR: каждая фигура собирается из отдельных слоёв для анимации.</p>
+    <div class="grid5 mt">
+      <!-- Доктор Ч. -->
+      <div class="ms"><div class="art"><svg viewBox="0 0 200 200" aria-label="Доктор Ч.">
+        <path d="M54 196 V140 q0 -34 46 -34 q46 0 46 34 V196 Z" fill="#fff" stroke="#1F4A57" stroke-width="3"/>
+        <path d="M100 108 V196" stroke="#1F4A57" stroke-width="3"/><path d="M86 108 L100 132 L114 108" fill="#AB2510"/>
+        <circle cx="122" cy="160" r="9" fill="none" stroke="#1F4A57" stroke-width="3"/><path d="M122 151 q-6 -20 -22 -22" fill="none" stroke="#1F4A57" stroke-width="3"/>
+        <circle cx="100" cy="72" r="34" fill="#F3D9C4"/>
+        <path d="M70 66 q2 -34 30 -36 q28 2 30 36 q-6 -14 -30 -16 q-24 2 -30 16z" fill="#3B2A20"/>
+        <path d="M80 92 q20 26 40 0 q-2 22 -20 24 q-18 -2 -20 -24z" fill="#3B2A20"/>
+        <circle cx="88" cy="72" r="9" fill="none" stroke="#1F4A57" stroke-width="2.4"/><circle cx="112" cy="72" r="9" fill="none" stroke="#1F4A57" stroke-width="2.4"/><path d="M97 72 h6" stroke="#1F4A57" stroke-width="2.4"/>
+        <circle cx="88" cy="72" r="2.6" fill="#16191C"/><circle cx="112" cy="72" r="2.6" fill="#16191C"/>
+        <rect x="128" y="120" width="26" height="20" rx="3" fill="#3B2A20"/><path d="M134 120 v-5 h14 v5" fill="none" stroke="#3B2A20" stroke-width="3"/><path d="M141 124 v12 M135 130 h12" stroke="#fff" stroke-width="2.4"/>
+      </svg></div><div class="tx"><b>Доктор Ч.</b><span class="small">Земский врач, когда в усадьбе была больница. Пенсне, саквояж, борода клинышком.</span><div class="q">«Сначала - руки с мылом, потом - экспонаты!»</div><div class="vars"><span>1 · земский врач</span><span>2 · фельдшер-путеец</span><span>3 · врач-эвакогоспиталь</span></div></div></div>
+      <!-- Кемка -->
+      <div class="ms"><div class="art"><svg viewBox="0 0 200 200" aria-label="Пароход Кемка">
+        <path d="M20 150 q80 16 160 0" fill="none" stroke="#1F4A57" stroke-width="3" opacity=".5"/>
+        <path d="M24 118 H176 L160 148 H44 Z" fill="#1F4A57"/>
+        <rect x="56" y="88" width="88" height="30" rx="4" fill="#EFE6D3" stroke="#1F4A57" stroke-width="3"/>
+        <circle cx="80" cy="103" r="7" fill="#fff" stroke="#1F4A57" stroke-width="2.5"/><circle cx="120" cy="103" r="7" fill="#fff" stroke="#1F4A57" stroke-width="2.5"/>
+        <circle cx="81" cy="104" r="3" fill="#16191C"/><circle cx="121" cy="104" r="3" fill="#16191C"/>
+        <path d="M92 110 q8 6 16 0" fill="none" stroke="#16191C" stroke-width="2.4" stroke-linecap="round"/>
+        <rect x="88" y="44" width="22" height="44" fill="#AB2510"/><rect x="88" y="44" width="22" height="8" fill="#16191C"/>
+        <circle cx="112" cy="30" r="10" fill="#EFE6D3" opacity=".9"/><circle cx="128" cy="20" r="7" fill="#EFE6D3" opacity=".7"/>
+        <circle cx="150" cy="128" r="16" fill="none" stroke="#EFE6D3" stroke-width="3"/><path d="M150 112 V144 M134 128 H166 M139 117 l22 22 M161 117 l-22 22" stroke="#EFE6D3" stroke-width="2"/>
+        <text x="60" y="140" font-family="Oswald" font-size="13" letter-spacing="2" fill="#EFE6D3">КЕМКА</text>
+        <path d="M14 166 q14 -10 28 0 t28 0 t28 0 t28 0 t28 0 t28 0 t28 0" fill="none" stroke="#1F4A57" stroke-width="3"/>
+      </svg></div><div class="tx"><b>Пароход «Кемка»</b><span class="small">Колёсный пароходик Тихвинской системы. Труба - красная, как линия ММК.</span><div class="q">«До шлюза - полный вперёд, у шлюза - терпение!»</div><div class="vars"><span>1 · колёсный</span><span>2 · буксир</span><span>3 · игрушка-кораблик</span></div></div></div>
+      <!-- Сом -->
+      <div class="ms"><div class="art"><svg viewBox="0 0 200 200" aria-label="Старый сом">
+        <path d="M30 112 C30 76 92 62 142 70 C172 76 188 92 190 108 C188 124 168 138 140 142 C90 150 30 144 30 112 Z" fill="#34503A"/>
+        <path d="M44 122 C80 136 130 138 170 124" fill="none" stroke="#EFE6D3" stroke-width="3" opacity=".5"/>
+        <path d="M110 72 C116 54 140 52 148 72" fill="#2a4230"/><path d="M190 108 L198 92 V124 Z" fill="#2a4230"/>
+        <circle cx="60" cy="98" r="11" fill="#EFE6D3"/><circle cx="62" cy="99" r="5" fill="#16191C"/>
+        <circle cx="60" cy="98" r="15" fill="none" stroke="#3B2A20" stroke-width="2.4"/><path d="M45 98 H30" stroke="#3B2A20" stroke-width="2.4"/>
+        <path d="M48 84 q12 -8 24 -2" fill="none" stroke="#16191C" stroke-width="3" stroke-linecap="round"/>
+        <path d="M36 116 q12 6 26 1" fill="none" stroke="#16191C" stroke-width="3" stroke-linecap="round"/>
+        <path d="M38 112 C20 120 12 140 8 164" fill="none" stroke="#3B2A20" stroke-width="3" stroke-linecap="round"/>
+        <path d="M42 116 C32 132 30 152 30 174" fill="none" stroke="#3B2A20" stroke-width="3" stroke-linecap="round"/>
+        <path d="M20 186 q16 -10 32 0 t32 0 t32 0 t32 0 t32 0" fill="none" stroke="#1F4A57" stroke-width="3" opacity=".6"/>
+      </svg></div><div class="tx"><b>Старый сом</b><span class="small">Хозяин Соминки и тёзка села. Монокль, усы - как старые снасти.</span><div class="q">«Я помню шлюзы ещё деревянными...»</div><div class="vars"><span>1 · мудрец в монокле</span><span>2 · лоцман в фуражке</span><span>3 · сом-рассказчик с картой</span></div></div></div>
+      <!-- Сова -->
+      <div class="ms"><div class="art"><svg viewBox="0 0 200 200" aria-label="Мудрая сова">
+        <path d="M30 178 H170" stroke="#3B2A20" stroke-width="6" stroke-linecap="round"/>
+        <path d="M100 30 C60 30 48 70 50 110 C52 150 74 172 100 172 C126 172 148 150 150 110 C152 70 140 30 100 30 Z" fill="#6E5A44"/>
+        <path d="M60 46 L52 22 L78 38 Z M140 46 L148 22 L122 38 Z" fill="#6E5A44"/>
+        <path d="M100 96 C78 98 70 120 72 140 C76 160 90 168 100 168 C110 168 124 160 128 140 C130 120 122 98 100 96 Z" fill="#EFE6D3"/>
+        <path d="M86 118 l6 6 l8 -8 l8 8 l6 -6 M84 136 l8 8 l8 -8 l8 8 l8 -8" fill="none" stroke="#2D5B86" stroke-width="2.4"/>
+        <circle cx="78" cy="74" r="20" fill="#EFE6D3"/><circle cx="122" cy="74" r="20" fill="#EFE6D3"/>
+        <circle cx="78" cy="76" r="8" fill="#16191C"/><circle cx="122" cy="76" r="8" fill="#16191C"/>
+        <circle cx="81" cy="73" r="2.4" fill="#fff"/><circle cx="125" cy="73" r="2.4" fill="#fff"/>
+        <path d="M94 88 L100 100 L106 88 Z" fill="#AB2510"/>
+        <path d="M60 60 q18 -10 34 2 M140 60 q-18 -10 -34 2" fill="none" stroke="#3B2A20" stroke-width="3" stroke-linecap="round"/>
+        <rect x="128" y="132" width="34" height="24" rx="2" fill="#2D5B86" transform="rotate(-12 145 144)"/>
+      </svg></div><div class="tx"><b>Мудрая сова</b><span class="small">Хранительница пословиц. Грудка - изразцовый узор, в крыле - книга.</span><div class="q">«Тише едешь - дальше будешь. Особенно по шлюзам».</div><div class="vars"><span>1 · сова с книгой</span><span>2 · сова-библиотекарь</span><span>3 · сова на башне усадьбы</span></div></div></div>
+      <!-- Домовой -->
+      <div class="ms"><div class="art"><svg viewBox="0 0 200 200" aria-label="Строгий домовой">
+        <path d="M58 190 V132 q0 -26 42 -26 q42 0 42 26 V190 Z" fill="#AB2510"/>
+        <path d="M58 150 H142" stroke="#521106" stroke-width="4"/>
+        <circle cx="100" cy="86" r="34" fill="#F3D9C4"/>
+        <path d="M64 92 C60 134 84 156 100 158 C116 156 140 134 136 92 C126 104 112 108 100 108 C88 108 74 104 64 92 Z" fill="#EFE6D3"/>
+        <path d="M60 74 C62 44 84 34 100 34 C116 34 138 44 140 74 C128 62 116 58 100 58 C84 58 72 62 60 74 Z" fill="#EFE6D3"/>
+        <path d="M76 70 l16 6 M124 70 l-16 6" stroke="#3B2A20" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="86" cy="84" r="4" fill="#16191C"/><circle cx="114" cy="84" r="4" fill="#16191C"/>
+        <ellipse cx="100" cy="98" rx="8" ry="6" fill="#E3A68A"/>
+        <path d="M90 116 h20" stroke="#3B2A20" stroke-width="3" stroke-linecap="round"/>
+        <path d="M150 120 v54" stroke="#3B2A20" stroke-width="4"/><path d="M140 170 h20 l-6 20 h-8 z" fill="#C9A15A"/>
+        <rect x="40" y="150" width="20" height="26" rx="3" fill="#2D5B86"/><path d="M44 158 h12 M44 164 h12 M44 170 h8" stroke="#EFE6D3" stroke-width="2"/>
+      </svg></div><div class="tx"><b>Строгий домовой</b><span class="small">Смотритель усадьбы. Держит веник и свиток «Правила музея».</span><div class="q">«В гостях руками не трогают. А ноги вытирают!»</div><div class="vars"><span>1 · смотритель с веником</span><span>2 · домовой-печник</span><span>3 · домовой-ключник</span></div></div></div>
+    </div>
+    <p class="small mt">В демо - по одному эскизу на персонажа, в работе - по три (подписаны под карточками), затем выбранный вариант в 3 ракурсах и 3 эмоциях для AR.</p>
+  </div>
+</section>
+
+<!-- 07 НАВИГАЦИЯ -->
+<section>
+  <div class="wrap">
+    <div class="k"><span class="num">07</span>Навигация</div>
+    <h2>Пиктограммы и указатели</h2>
+    <div class="g8 mt">
+      <div class="ic"><div class="b"><svg viewBox="0 0 24 24" fill="none" stroke="#EFE6D3" stroke-width="1.8" stroke-linecap="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></div>Аудиогид</div>
+      <div class="ic"><div class="b"><svg viewBox="0 0 24 24" fill="none" stroke="#EFE6D3" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM18 18h3v3"/></svg></div>QR-код</div>
+      <div class="ic"><div class="b"><svg viewBox="0 0 24 24" fill="none" stroke="#EFE6D3" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="4" r="1.6"/><path d="M11 7v6h5l2 6M11 10h4"/><path d="M9 11a5 5 0 1 0 6 7"/></svg></div>Доступная среда</div>
+      <div class="ic"><div class="b" style="background:var(--dz)"><span style="font:600 26px/1 var(--stamp);color:#fff">6+</span></div>Возраст</div>
+      <div class="ic"><div class="b"><svg viewBox="0 0 24 24" fill="none" stroke="#EFE6D3" stroke-width="1.8"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg></div>Усадьба</div>
+      <div class="ic"><div class="b"><svg viewBox="0 0 24 24" fill="none" stroke="#EFE6D3" stroke-width="1.8" stroke-linecap="round"><path d="M4 18V9a8 8 0 0 1 16 0v9M12 1v17M7 8l5 3 5-3"/><path d="M2 21q2.5-2 5 0t5 0 5 0 5 0"/></svg></div>Шлюзы и вода</div>
+      <div class="ic"><div class="b"><svg viewBox="0 0 24 24" fill="none" stroke="#EFE6D3" stroke-width="1.8" stroke-linecap="round"><path d="M3 20L9 4M21 20L15 4M12 6v2M12 11v2M12 16v2"/></svg></div>Дорога жизни</div>
+      <div class="ic"><div class="b"><svg viewBox="0 0 24 24" fill="none" stroke="#EFE6D3" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>Часы работы</div>
+    </div>
+    <div class="grid3 mt">
+      <div class="card" style="padding:16px"><svg viewBox="0 0 320 200" width="100%" aria-label="указатель"><rect x="150" y="60" width="10" height="140" fill="#3B2A20"/>
+        <path d="M40 30 H260 L286 52 L260 74 H40 Z" fill="#1F4A57"/><text x="56" y="58" font-family="Forum" font-size="21" fill="#EFE6D3">Усадьба · экспозиция</text>
+        <path d="M60 90 H280 V134 H60 L34 112 Z" fill="#EFE6D3" stroke="#1F4A57" stroke-width="2"/><text x="80" y="118" font-family="Forum" font-size="21" fill="#1F4A57">Шлюз · 350 м</text>
+        <rect x="40" y="30" width="6" height="44" fill="#AB2510"/></svg><p class="small">Наружный указатель: доска 1200×300, лиственница + плёнка, кегль от 90 мм.</p></div>
+      <div class="card" style="padding:16px"><svg viewBox="0 0 320 200" width="100%" aria-label="табличка доступности"><rect x="20" y="16" width="280" height="168" rx="8" fill="#fff" stroke="#1F4A57" stroke-width="3"/>
+        <rect x="20" y="16" width="280" height="40" rx="8" fill="#1F4A57"/><rect x="20" y="44" width="280" height="12" fill="#1F4A57"/>
+        <text x="40" y="43" font-family="Inter" font-weight="600" font-size="15" fill="#fff">ДОСТУПНАЯ СРЕДА</text>
+        <circle cx="70" cy="118" r="34" fill="#2D5B86"/><g transform="translate(46 94) scale(2)" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="4" r="1.6"/><path d="M11 7v6h5l2 6M11 10h4"/><path d="M9 11a5 5 0 1 0 6 7"/></g>
+        <text x="116" y="108" font-family="Inter" font-size="12.5" fill="#16191C">Пандус - вход со двора</text><text x="116" y="130" font-family="Inter" font-size="12.5" fill="#16191C">Тактильная схема у кассы</text><text x="116" y="152" font-family="Inter" font-size="12.5" fill="#16191C">Брайль на табличках</text></svg><p class="small">Табличка МГН: контраст ≥ 70 %, рельефные знаки, высота 1350-1600 мм.</p></div>
+      <div class="card" style="padding:16px"><svg viewBox="0 0 320 200" width="100%" aria-label="фасадная вывеска"><rect x="10" y="40" width="300" height="120" fill="#EFE6D3"/><rect x="10" y="40" width="300" height="16" fill="url(#pPodzor)"/>
+        <g style="color:#1F4A57;--road:#AB2510;--paper:#EFE6D3"><svg x="32" y="70" width="70" height="70"><use href="#mk"/></svg></g>
+        <text x="116" y="108" font-family="Forum" font-size="36" fill="#1F4A57">СОМИНО</text><rect x="116" y="116" width="168" height="2.5" fill="#AB2510"/><text x="116" y="136" font-family="Oswald" font-size="12" letter-spacing="4" fill="#AB2510">ДОРОГА ЖИЗНИ</text></svg><p class="small">Фасадная вывеска на подзоре: объёмные буквы из массива, знак - фрезеровка.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 ПОЛИГРАФИЯ -->
+<section>
+  <div class="wrap">
+    <div class="k"><span class="num">08</span>Полиграфия</div>
+    <h2>Афиша, билет, буклет</h2>
+    <div class="grid3 mt" style="align-items:start">
+      <div class="card" style="padding:14px"><svg viewBox="0 0 297 420" width="100%" aria-label="афиша">
+        <rect width="297" height="420" fill="#1F4A57"/><rect width="297" height="420" fill="url(#pSom)" opacity=".18"/>
+        <rect x="0" y="0" width="297" height="26" fill="#AB2510"/><text x="14" y="18" font-family="Oswald" font-size="10" letter-spacing="3" fill="#fff">МУЗЕЙ «СОМИНО: ДОРОГА ЖИЗНИ» • 6+</text>
+        <text x="20" y="96" font-family="Forum" font-size="40" fill="#EFE6D3">Ночь</text><text x="20" y="138" font-family="Forum" font-size="40" fill="#EFE6D3">у шлюза</text>
+        <text x="20" y="170" font-family="Inter" font-size="11" fill="#cfdadd">экскурсия с фонарями по Тихвинской</text><text x="20" y="185" font-family="Inter" font-size="11" fill="#cfdadd">водной системе и рассказ старого сома</text>
+        <g style="color:#EFE6D3;--road:#F0A593;--paper:#1F4A57"><svg x="160" y="210" width="120" height="120"><use href="#mk"/></svg></g>
+        <rect x="20" y="350" width="150" height="40" fill="#EFE6D3"/><text x="30" y="376" font-family="Oswald" font-size="17" letter-spacing="1.5" fill="#1F4A57">14 · 11 · 18:00</text>
+        <rect x="0" y="404" width="297" height="16" fill="#183B45"/><path d="M10 412 H30 M44 412 H64 M78 412 H98 M112 412 H132 M146 412 H166 M180 412 H200 M214 412 H234 M248 412 H268" stroke="#EFE6D3" stroke-width="2"/>
+      </svg><p class="small" style="margin-top:8px">Афиша А3: верхняя лента - как у ММК, нижняя - «дорога».</p></div>
+      <div style="display:grid;gap:16px">
+        <div class="card" style="padding:14px"><svg viewBox="0 0 400 150" width="100%" aria-label="билет">
+          <rect width="400" height="150" rx="8" fill="#EFE6D3"/><rect x="290" y="0" width="110" height="150" fill="#AB2510"/><path d="M290 0 V150" stroke="#EFE6D3" stroke-width="2" stroke-dasharray="5 5"/>
+          <rect x="0" y="0" width="290" height="14" fill="url(#pPodzor)"/>
+          <g style="color:#1F4A57;--road:#AB2510;--paper:#EFE6D3"><svg x="18" y="34" width="56" height="56"><use href="#mk"/></svg></g>
+          <text x="86" y="60" font-family="Forum" font-size="26" fill="#1F4A57">СОМИНО</text><text x="86" y="80" font-family="Oswald" font-size="10" letter-spacing="3" fill="#AB2510">ДОРОГА ЖИЗНИ</text>
+          <text x="18" y="122" font-family="Inter" font-size="11" fill="#5A6168">Входной билет · взрослый · 250 ₽</text>
+          <text x="345" y="56" text-anchor="middle" font-family="Oswald" font-size="11" letter-spacing="2" fill="#fff">№</text><text x="345" y="88" text-anchor="middle" font-family="Oswald" font-size="24" fill="#fff">000127</text>
+          <text x="345" y="118" text-anchor="middle" font-family="Inter" font-size="9" fill="#F6C9BD">контроль</text></svg><p class="small" style="margin-top:8px">Билет 100×37 мм, корешок цвета ММК, нумерация.</p></div>
+        <div class="card" style="padding:14px"><svg viewBox="0 0 400 180" width="100%" aria-label="буклет">
+          <rect x="0" y="0" width="133" height="180" fill="#F2F0EF"/><rect x="133" y="0" width="134" height="180" fill="#34503A"/><rect x="267" y="0" width="133" height="180" fill="#1F4A57"/>
+          <rect x="133" y="0" width="134" height="180" fill="url(#pShluz)" opacity=".25"/>
+          <text x="14" y="30" font-family="Forum" font-size="15" fill="#1F4A57">Как работал шлюз</text>
+          <path d="M18 120 V86 a30 30 0 0 1 60 0 V120" fill="none" stroke="#1F4A57" stroke-width="3"/><path d="M48 56 V120" stroke="#1F4A57" stroke-width="2"/><path d="M10 140 q14 -8 28 0 t28 0 t28 0" fill="none" stroke="#2D5B86" stroke-width="3"/>
+          <text x="150" y="40" font-family="Oswald" font-size="11" letter-spacing="3" fill="#EFE6D3">1811 → 1941</text><text x="150" y="70" font-family="Forum" font-size="20" fill="#EFE6D3">От пристани</text><text x="150" y="94" font-family="Forum" font-size="20" fill="#EFE6D3">к Дороге жизни</text>
+          <g style="color:#EFE6D3;--road:#F0A593;--paper:#1F4A57"><svg x="296" y="40" width="76" height="76"><use href="#mk"/></svg></g>
+          <text x="333" y="140" text-anchor="middle" font-family="Forum" font-size="18" fill="#EFE6D3">СОМИНО</text></svg><p class="small" style="margin-top:8px">Буклет-евро, 3 фальца: обложка, история, схема шлюза.</p></div>
+      </div>
+      <div class="card pad"><h3>Шаблоны, которые музей правит сам</h3><ul class="dash small"><li>Афиша А3/А4 и пост 1080×1350 - один макет, три формата.</li><li>Открытки 148×105: «Пять проводников» и «Вода и дорога».</li><li>Приглашение, блокнот, календарь - на тех же сетках.</li><li>Каталог: сетка 12 колонок, поля 15 мм, Inter 9/13.</li><li>Все файлы: CMYK, выпуски 3 мм, шрифты в кривых + редактируемые копии.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 СУВЕНИРЫ -->
+<section>
+  <div class="wrap">
+    <div class="k"><span class="num">09</span>Сувениры</div>
+    <h2>То, что хочется увезти</h2>
+    <div class="grid4 mt">
+      <div class="card" style="padding:14px"><svg viewBox="0 0 220 200" width="100%" aria-label="кружка"><rect x="40" y="40" width="120" height="140" rx="10" fill="#fff" stroke="#1F4A57" stroke-width="3"/><path d="M160 76 h18 a20 20 0 0 1 0 40 h-18" fill="none" stroke="#1F4A57" stroke-width="10"/>
+        <rect x="42" y="120" width="116" height="58" rx="0" fill="url(#pIzr)"/><svg x="78" y="46" width="44" height="44" viewBox="0 0 200 200"><use href="#owlmini"/></svg>
+        <text x="100" y="110" text-anchor="middle" font-family="Forum" font-size="20" fill="#1F4A57">СОМИНО</text></svg><h3>Кружка «Изразец»</h3><p class="small">Сублимация, узор печи усадьбы по низу.</p></div>
+      <div class="card" style="padding:14px"><svg viewBox="0 0 220 200" width="100%" aria-label="футболка"><path d="M70 30 L40 44 L16 80 L44 94 L54 78 V184 H166 V78 L176 94 L204 80 L180 44 L150 30 Q110 54 70 30 Z" fill="#1F4A57"/>
+        <g style="color:#EFE6D3;--road:#F0A593;--paper:#1F4A57"><svg x="76" y="74" width="68" height="68"><use href="#mk"/></svg></g><text x="110" y="160" text-anchor="middle" font-family="Oswald" font-size="9" letter-spacing="1.5" fill="#EFE6D3">ВОДА СТАЛА ДОРОГОЙ</text></svg><h3>Футболка «Путь»</h3><p class="small">Шелкография в 2 цвета.</p></div>
+      <div class="card" style="padding:14px"><svg viewBox="0 0 220 200" width="100%" aria-label="пряник"><rect x="34" y="30" width="152" height="152" rx="18" fill="#C58B4E"/><rect x="44" y="40" width="132" height="132" rx="12" fill="#F3E3C6"/>
+        <rect x="44" y="40" width="132" height="14" fill="url(#pPodzor)"/><g style="color:#1F4A57;--road:#AB2510;--paper:#F3E3C6"><svg x="80" y="64" width="60" height="60"><use href="#mk"/></svg></g><text x="110" y="150" text-anchor="middle" font-family="Forum" font-size="18" fill="#1F4A57">Сомино</text></svg><h3>Печатный пряник</h3><p class="small">Пищевая печать, в упаковке-«билете».</p></div>
+      <div class="card" style="padding:14px"><svg viewBox="0 0 220 200" width="100%" aria-label="шоппер"><path d="M80 50 a30 30 0 0 1 60 0" fill="none" stroke="#3B2A20" stroke-width="5"/><rect x="40" y="50" width="140" height="140" fill="#EFE6D3" stroke="#3B2A20" stroke-width="2"/>
+        <rect x="40" y="120" width="140" height="70" fill="url(#pSom)"/><text x="110" y="96" text-anchor="middle" font-family="Forum" font-size="22" fill="#1F4A57">Соминки</text><text x="110" y="112" text-anchor="middle" font-family="Oswald" font-size="9" letter-spacing="3" fill="#AB2510">ДО 200 ЛОДОК В ГОД</text></svg><h3>Шоппер и пакет</h3><p class="small">Лён/хлопок, трафарет, паттерн лодок.</p></div>
+    </div>
+    <div class="grid5 mt">
+      <div class="ic"><div class="b" style="border-radius:50%;background:var(--dz);color:#fff;--road:#fff;--paper:var(--dz)"><svg viewBox="0 0 120 120"><use href="#mk"/></svg></div>Значок-знак</div>
+      <div class="ic"><div class="b" style="border-radius:50%;background:#EFE6D3;width:76px"><svg viewBox="0 0 120 120"><rect width="120" height="120" fill="url(#pIzr)"/></svg></div>Значок-изразец</div>
+      <div class="ic"><div class="b" style="background:#34503A;border-radius:4px;height:28px;width:120px"><span style="font:600 11px/1 var(--stamp);letter-spacing:.2em;color:#EFE6D3">СОМИНО</span></div>Карандаш</div>
+      <div class="ic"><div class="b" style="background:#1F4A57;border-radius:99px;height:22px;width:120px"><span style="font:600 9px/1 var(--stamp);letter-spacing:.2em;color:#EFE6D3">ДОРОГА ЖИЗНИ</span></div>Ручка</div>
+      <div class="ic"><div class="b" style="background:#EFE6D3;width:76px"><svg viewBox="0 0 64 40" style="width:58px"><path d="M6 22 q26 14 52 0 l-6 -8 h-40 z" fill="#1F4A57"/></svg></div>Магнит «Соминка»</div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 ТЕХТРЕБОВАНИЯ -->
+<section>
+  <div class="wrap">
+    <div class="k"><span class="num">10</span>Технические требования</div>
+    <h2>Коротко по каждому пункту</h2>
+    <div class="grid2 mt">
+      <div class="card pad"><h3>Логотип</h3><ul class="dash small"><li>Вектор на модульной сетке, 4 версии × цвет/ч-б/инверсия.</li><li>Охранное поле X = высота волны; мин. 10 мм / 24 px (знак), 35 мм / 140 px (полная).</li><li>Форматы: AI, SVG, PDF (CMYK, Pantone), PNG @1x/@2x/@4x на прозрачном фоне.</li><li>Запреты: растягивание, обводка, тени, смена цветов вне палитры.</li></ul></div>
+      <div class="card pad"><h3>Палитра и шрифты</h3><ul class="dash small"><li>7 цветов: HEX/RGB для экрана, CMYK для офсета, Pantone C/U для сувениров.</li><li>Пары допустимых сочетаний и контраст ≥ 4.5 : 1 для текста.</li><li>Forum, Inter, акцентный (PF Stamps Pro ММК или Oswald) - файлы и лицензии.</li></ul></div>
+      <div class="card pad"><h3>Паттерны и рамки</h3><ul class="dash small"><li>Бесшовные плитки SVG/AI + растровые 3000 px для сублимации.</li><li>Мин. масштаб модуля для печати 8 мм; цветовые варианты 3 шт. на каждый.</li></ul></div>
+      <div class="card pad"><h3>Талисманы</h3><ul class="dash small"><li>15 эскизов → 5 выбранных: 3 ракурса + 3 эмоции.</li><li>Вектор с разнесёнными слоями (голова, руки, глаза, рот) для AR-анимации.</li><li>Правила: размер рядом с логотипом, что персонажам нельзя (оружие, военная форма, шутки о войне).</li></ul></div>
+      <div class="card pad"><h3>Навигация</h3><ul class="dash small"><li>Пиктограммы на сетке 24 px, линия 1.8 px, 12+ шт.</li><li>6 типовых носителей с чертежами и материалами; карта размещения по усадьбе.</li><li>МГН: контраст, Брайль, высоты по своду правил СП 59.13330.</li></ul></div>
+      <div class="card pad"><h3>Полиграфия и сувениры</h3><ul class="dash small"><li>Макеты с выпусками 3 мм, CMYK, шрифты в кривых + редактируемые копии.</li><li>Сувениры - на мокапах + техфайлы под нанесение (сублимация, шелкография, пищевая печать, гравировка).</li><li>Брендбук PDF ~40-50 страниц + печать 2 экз. А4, полноцвет, переплёт.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 БЮДЖЕТ И РИСКИ -->
+<section>
+  <div class="wrap">
+    <div class="k"><span class="num">11</span>Реализм бюджета</div>
+    <h2>Почему 45 000 ₽ и 13 дней - и как уложиться</h2>
+    <div class="grid2 mt">
+      <div class="tbl"><table>
+        <tr><th>Блок</th><th>Часы</th><th>Доля</th></tr>
+        <tr><td>Исследование, концепция, логотип</td><td>16</td><td>20 %</td></tr>
+        <tr><td>Палитра, шрифты, паттерны, рамки</td><td>10</td><td>12 %</td></tr>
+        <tr><td>Талисманы: 15 эскизов + доработка 5</td><td>22</td><td>27 %</td></tr>
+        <tr><td>Навигация и пиктограммы</td><td>10</td><td>12 %</td></tr>
+        <tr><td>Полиграфия и сувениры</td><td>14</td><td>17 %</td></tr>
+        <tr><td>Брендбук, исходники, печать</td><td>10</td><td>12 %</td></tr>
+        <tr><td>Итого</td><td>82</td><td>45 000 ₽</td></tr>
+      </table></div>
+      <div class="card pad"><h3>Как уложиться</h3><ul class="dash small"><li>Сначала утверждаем логотип и палитру (день 3) - дальше всё строится из них, без переделок «по кругу».</li><li>Эскизы персонажей - сразу пачкой 15 шт., совет выбирает за один заход.</li><li>Полиграфия и сувениры - эскизы на шаблонах, а не 30 отдельных макетов «с нуля».</li><li>Цена фиксированная: печать и доставка 2 экз. - по чеку, без наценки.</li></ul>
+      <h3 style="margin-top:18px">Риски</h3><ul class="dash small"><li>Задержка материалов ММК → начинаю с исследования места, стиль ММК уже разобран по сайту.</li><li>Совет собирается редко → прошу дату заседания заранее, промежуточные версии согласует контактное лицо.</li><li>Третий круг правок вне ТЗ → оговариваем лимит заранее.</li><li>Пантоны - физическая сверка в типографии до печати брендбука.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 ГРАФИК -->
+<section>
+  <div class="wrap">
+    <div class="k"><span class="num">12</span>График на 13 дней</div>
+    <h2>С 7 по 19 ноября, сдача - до 20.11</h2>
+    <div class="plan">
+      <div style="background:#1F4A57">1</div><div style="background:#1F4A57">2</div><div style="background:#AB2510">3</div><div style="background:#34503A">4</div><div style="background:#34503A">5</div><div style="background:#2D5B86">6</div><div style="background:#2D5B86">7</div><div style="background:#AB2510">8</div><div style="background:#3B2A20">9</div><div style="background:#3B2A20">10</div><div style="background:#521106">11</div><div style="background:#AB2510">12</div><div style="background:#521106">13</div>
+    </div>
+    <div class="legend"><span><i style="background:#1F4A57"></i>1-2: исследование, 2 концепции, логотип</span><span><i style="background:#AB2510"></i>3, 8, 12: согласования</span><span><i style="background:#34503A"></i>4-5: палитра, шрифты, паттерны</span><span><i style="background:#2D5B86"></i>6-7: 15 эскизов талисманов</span><span><i style="background:#3B2A20"></i>9-10: навигация, полиграфия, сувениры</span><span><i style="background:#521106"></i>11, 13: брендбук, печать, отправка</span></div>
+    <div class="grid3 mt">
+      <div class="card pad"><h3>Сдача</h3><p class="small">PDF-брендбук + архив исходников (AI/SVG/PDF/PNG, шрифты, лицензии), 2 печатных экземпляра курьером СДЭК в Сомино.</p></div>
+      <div class="card pad"><h3>Правки</h3><p class="small">Два цикла по 2 дня, как в ТЗ. Замечания - одним списком от совета. Промежуточные версии показываю по мере готовности.</p></div>
+      <div class="card pad"><h3>Оплата</h3><p class="small">Безопасная сделка freelance.ru или 50/50: аванс после утверждения плана, остаток после приёмки советом.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">Демо-концепция к отклику, подготовлена бесплатно. Логотип ММК «Дорога жизни» не воспроизводится - используются только цвета и приёмы сайта комплекса для совместимости. Финальная система строится после получения брендбука ГБУК ЛО «ММК «Дорога жизни» и фото усадьбы.</div></footer>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="owlmini" viewBox="0 0 200 200"><path d="M100 30 C60 30 48 70 50 110 C52 150 74 172 100 172 C126 172 148 150 150 110 C152 70 140 30 100 30 Z" fill="#6E5A44"/><circle cx="78" cy="74" r="20" fill="#EFE6D3"/><circle cx="122" cy="74" r="20" fill="#EFE6D3"/><circle cx="78" cy="76" r="8" fill="#16191C"/><circle cx="122" cy="76" r="8" fill="#16191C"/><path d="M94 88 L100 100 L106 88 Z" fill="#AB2510"/></symbol>
+</defs></svg>
+</body>
+</html>
